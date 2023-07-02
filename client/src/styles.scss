@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+$lightBlue: #43daff;
+$roboto-slab: 'Roboto Slab', serif;   
+$open-sans: 'Open Sans', sans-serif;
+
+*{
+    font-family: $open-sans;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    .container {
+        width: 1024px;
+        color: inherit;
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+        //Login and Register
+
+        .auth {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: $lightBlue;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background: white;
+            width: 200px;
+            gap: 15px;
+            border-radius: 10px;
+
+            input {
+                padding: 10px;
+                border: none;
+                border-bottom:  1px solid gray;;
+            }
+
+            button {
+                padding: 10px;
+                border: none;
+                background: black;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 12px;
+                color: red;
+                text-align: center;
+            }
+            
+            span {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+
+    //Navbar
+
+    .navbar {
+        .container {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            .logo{}
+            .links {
+                display: flex;
+                gap: 10px;
+
+                h6{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
